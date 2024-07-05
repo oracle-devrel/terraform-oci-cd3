@@ -14,7 +14,7 @@ The Terraform modules can be directly deployed using this repository as a centra
 
 ## Prerequisites
 
-1. Install terraform. Get the latest version from [Terraform Releases](https://releases.hashicorp.com/terraform). 
+1. Install terraform.
    ```
    sudo wget https://releases.hashicorp.com/terraform/1.3.6/terraform_1.3.6_linux_amd64.zip
    ```
@@ -34,7 +34,6 @@ The Terraform modules can be directly deployed using this repository as a centra
    Allow group <cd3_group> to read all resources in tenancy
    Allow group <cd3_group> to manage all-resources in tenancy where any {target.resource = 'instance-family', target.resource = 'object-family', target.resource = 'volume-family', target.resource = 'virtual-network-family', target.resource = 'database-family' ,target.resource = 'dns',target.resource = 'file-family'}
    ```
-<br>
 
 ### Getting Started
 
