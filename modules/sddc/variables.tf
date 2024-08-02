@@ -1,6 +1,5 @@
-# Copyright (c) 2024, Oracle and/or its affiliates. All rights reserved.
-# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
-#
+// Copyright (c) 2021, 2022, Oracle and/or its affiliates.
+
 ############################
 # Variable Block - SDDC
 # Create SDDC
@@ -18,7 +17,11 @@ variable "compute_availability_domain" {
   default     = null
 }
 
-
+variable "sddc_display_name" {
+  description = "(Required) (Updatable) The OCID of the compartment to contain the SDDC."
+  type        = string
+  default     = null
+}
 
 variable "instance_display_name_prefix" {
   description = "A string that will be prepended to all ESXI "
@@ -29,11 +32,6 @@ variable "instance_display_name_prefix" {
 # SDDC Parameters#
 ##################
 
-variable "initial_cluster_display_name" {
-  description = "initial cluster display name."
-  type        = string
-  default     = null
-}
 
 variable "sddc_enabled" {
   description = "Whether to deploy SDDC Cluster. If set to true, creates a SDDC Cluster."
@@ -57,7 +55,7 @@ variable "vmware_software_version" {
   type        = string
 }
 
-variable "initial_commitment" {
+variable "initial_sku" {
   description = "commitment Hourly/Monthly"
   type        = string
   default     = null
@@ -238,4 +236,23 @@ variable "workload_datastore" {
  type = list(string)
  default = []
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

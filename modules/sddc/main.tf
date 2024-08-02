@@ -1,6 +1,5 @@
-# Copyright (c) 2024, Oracle and/or its affiliates. All rights reserved.
-# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
-#
+// Copyright (c) 2021, 2022, Oracle and/or its affiliates.
+
 ############################
 # Resource Block - SDDC
 # Create SDDC
@@ -13,11 +12,10 @@ resource "oci_ocvp_sddc" "sddc" {
 
   initial_configuration {
     initial_cluster_configurations {
-        display_name                 = var.initial_cluster_display_name
-        initial_commitment           = var.initial_commitment
-        compute_availability_domain  = var.compute_availability_domain
-        esxi_hosts_count             = var.esxi_hosts_count
-        vsphere_type                 = "MANAGEMENT"
+        initial_commitment           = var.initial_sku
+        compute_availability_domain = var.compute_availability_domain
+        esxi_hosts_count            = var.esxi_hosts_count
+        vsphere_type                = "MANAGEMENT"
         initial_host_ocpu_count      = var.initial_host_ocpu_count
         initial_host_shape_name      = var.initial_host_shape_name
         instance_display_name_prefix = var.instance_display_name_prefix
