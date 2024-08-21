@@ -53,9 +53,9 @@ variable "user_email" {
   default     = null
 }
 
-variable "disable_capabilities" {
+variable "enabled_capabilities" {
   type        = list(string)
-  description = "The name of the capabilities disabled for user"
+  description = "The name of the capabilities enabled for user"
   default     = []
 }
 
