@@ -206,3 +206,22 @@ variable "boot_backup_policies" {
   description = "Map of boot volume backup policies to be provisioned"
   default     = {}
 }
+
+#########################
+## Dedicated VM Hosts ##
+#########################
+
+variable "dedicated_hosts" {
+  type = map(object({
+    availability_domain = string
+    compartment_id      = string
+    vm_host_shape       = string
+    defined_tags        = optional(map(any))
+    display_name        = optional(string)
+    fault_domain        = optional(string)
+    freeform_tags       = optional(map(any))
+  }))
+  description = "To provision new dedicated VM hosts"
+  default     = {}
+}
+
