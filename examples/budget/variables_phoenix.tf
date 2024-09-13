@@ -48,6 +48,7 @@ variable "compartment_ocids" {
   type = map(any)
   default = {
     	#START_compartment_ocids#
+	root = "ocid1.tenancy.oc1..aaaaaaaa5ob2e73i4bavdqrbrch25odbfbdbfbbcuxiies2dgpwdinmrmel3a"
 	compartment1 = "ocid1.compartment.oc1..aaaaaaaa5tx27cqohsryhdhdfdf6nubepnm6j3wsllkhxf4xjl4hoa"
 	#compartment_ocids_END#
   }
