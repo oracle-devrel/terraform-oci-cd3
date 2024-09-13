@@ -14,11 +14,11 @@
 dbsystems_vm_bm = {
        DBSYSSERESEERE = {
             availability_domain  = 0
-            compartment_id       = "Hari"
+            compartment_id       = "CD3Demo"
             shape                = "VM.Standard.E5.Flex"
-            network_compartment_id   = "Hari"
-            vcn_name             = "hari_test_vcn1"
-            subnet_id            = "hari_test_publicsubnet"
+            network_compartment_id   = "CD3Demo"
+            vcn_name             = "test_vcn1"
+            subnet_id            = "test_publicsubnet"
             hostname             = "otfdsferess"
             cpu_core_count       = 1
             database_edition     = "ENTERPRISE_EDITION"
